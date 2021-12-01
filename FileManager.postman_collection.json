@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "38747596-0535-45bb-86a6-ebe5d9e2717a",
+		"name": "FileManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/uploadFileWithPath",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "myFile",
+							"type": "file",
+							"src": "/C:/Users/shubha/Desktop/bcd2efd9-c2d6-4a66-a005-05a56a2490db.jpg"
+						},
+						{
+							"key": "file",
+							"value": "d/y",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/uploadFileWithPath",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"uploadFileWithPath"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/deleteFile?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteFile?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteFile"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getFilesByFolderName?path=d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getFilesByFolderName?path=d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getFilesByFolderName"
+					],
+					"query": [
+						{
+							"key": "path",
+							"value": "d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getFilesByFileName?filename=Addhar card.pdf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getFilesByFileName?filename=Addhar card.pdf",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getFilesByFileName"
+					],
+					"query": [
+						{
+							"key": "filename",
+							"value": "Addhar card.pdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/getAllFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllFiles",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllFiles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
