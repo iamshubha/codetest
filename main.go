@@ -10,6 +10,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+//Starting point of application
 func main() {
 
 	db := util.GetDB()
